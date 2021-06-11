@@ -1,0 +1,2 @@
+- Cambiar mensajes error Joi validation schema o cambiar validador OK
+- Arreglar si codigo confirmacion caduca enviar uno nuevo email

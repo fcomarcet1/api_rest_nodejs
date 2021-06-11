@@ -1,0 +1,26 @@
+// Check if input email has been modified and check if exists in db and your owner
+if (params.email !== identity.email) {
+
+    let user = await User.findOne({email: params.email.toLowerCase()});
+
+    if (user && user.email === params.email) {
+        return res.status(200).send({
+            status: "success",
+            message: "Email no valido ya pertenece a otro usuario"
+        });
+    } else {
+        // Find && update document
+        return res.status(200).send({
+            status: "success",
+            message: "Updating data..."
+        });
+    }
+
+
+} else {
+    //update
+    return res.status(200).send({
+        status: "success",
+        message: "Updating data..."
+    });
+}

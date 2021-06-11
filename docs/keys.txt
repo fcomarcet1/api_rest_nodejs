@@ -1,0 +1,42 @@
+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
+
+var transport = nodemailer.createTransport({
+  host: "smtp.mailtrap.io",
+  port: 2525,
+  auth: {
+    user: "9be90c2c0fa7b3",
+    pass: "2ddccfe3577484"
+  }
+});
+
+
+{
+  value: {
+    email: 'fcomarcet1gmail.com',
+    password: 'a48330190Z*',
+    confirmPassword: 'a48330190Z*1'
+  },
+  error: [Error [ValidationError]: "email" must be a valid email] {
+    _original: {
+      email: 'fcomarcet1gmail.com',
+      password: 'a48330190Z*',
+      confirmPassword: 'a48330190Z*1'
+    },
+    details: [ [Object] ]
+  }
+}
+{
+  value: {
+    email: 'fcomarcet1gmail.com',
+    password: 'a48330190Z*',
+    confirmPassword: 'a48330190Z*1'
+  },
+  error: [Error [ValidationError]: "email" must be a valid email] {
+    _original: {
+      email: 'fcomarcet1gmail.com',
+      password: 'a48330190Z*',
+      confirmPassword: 'a48330190Z*1'
+    },
+    details: [ [Object] ]
+  }
+}
